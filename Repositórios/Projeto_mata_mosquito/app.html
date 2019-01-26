@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title></title>
+        <meta charset="utf-8"/>
+
+        <link rel="stylesheet" href="style.css"/>
+        <script src="jogo.js"></script>
+
+    </head>
+
+    <!--Onresize ajusta o tamanho da tela-->
+    <body onresize = "ajustaTamanhoPalcoJogo()">
+        
+        <!-- imagem criada como modelo para criação da imagem randômica
+        <img class="mosquito1" src="imagens/mosquito.png"/> Imagem mosquito
+        -->
+
+        <div class="painel">
+            <div class="vidas">
+                <img id="v1" src="imagens/coracao_cheio.png">
+                <img id="v2" src="imagens/coracao_cheio.png">
+                <img id="v3" src="imagens/coracao_cheio.png">
+            </div>
+            <div class="cronometro"> Tempo restante: <span id="cronometro"></span></div>                
+        </div>      
+            
+        <script>
+            document.getElementById('cronometro').innerHTML = tempo
+
+            //chamada da posição randômica em um intervalo de tempo 
+            //A cada um segundo será apresentado na tela o elemento html criado
+            var criaMosca =  setInterval(function(){
+                posicaoRandomica()
+            }, criaMosquitoTempo)
+        </script>
+    </body>
+</html>

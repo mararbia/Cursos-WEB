@@ -1,0 +1,56 @@
+html{
+    cursor: url(imagens/mata_mosquito.png) 30 30, auto;
+}
+
+/*Atuando no elemento body*/
+body{
+    background-image: url(imagens/bg.jpg);
+    background-repeat: no-repeat;
+}
+
+
+/*Ajustando tamanho das imagens do mosquito*/
+.mosquito1{
+    width: 50px;
+    height: 50px;
+}
+
+.mosquito2{
+    width: 70px;
+    height: 70px;
+}
+
+.mosquito3{
+    width: 90px;
+    height: 90px;
+}
+
+/*Criando as classes ladoA e ladoB*/
+.ladoA{
+    transform: scaleX(1); /*é a própria posição da imagem*/
+}
+
+.ladoB{
+    transform: scaleX(-1); /*faz a inversão da imagem (flip)*/
+}
+
+.painel{
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    left: 0px;
+    bottom: 0px;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.vidas{
+    float: left;
+}
+
+.cronometro{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
