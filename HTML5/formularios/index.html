@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    O formulário é muito utilizado para coleta de dados. As tags mais utilizadas serã descritas abaixo:
+    <div>
+        <h1>Get</h1>
+        Testando o get e enviando dados para a busca no google
+        Digite na caixa o nome do item a ser pesquisado e aperte enter
+        <form method="get" action="https://google.com/search">
+            <input type="text" name="q">
+        </form>
+        O action determina para qual URL a requisão get ou post será enviada
+    </div>
+
+    <div>
+        <h1>Input</h1>
+        <form>
+            <input type="text" name="q" value="Nome"> <br />
+            <input type="password" name="q" value="Nome"> <br />
+            <input type="email" name="nome" placeholder="E-mail"> <br />
+            <input type="hidden" name="qhidden" value="Nome"> <br />
+            <input type="search" name="nome" placeholder="Buscar"> <br />
+            <input type="tel" name="telefone" placeholder="(xx) xxxx-xxxx"> <br />
+            <input type="number" name="idade" placeholder="Idade"> <br />
+            <input type="url" name="linkedin" placeholder="Linkedin URL"> <br />
+            <input type="range" name="urgencia" min="0" max="100" step="0.1"> <br />
+        </form>
+
+        Setando o value, ele já deixa um valor para ser salvo. O ideal é deixar ele vazio
+        <ul>
+            <li>O text mostra o texto puro</li>
+            <li>O password esconde o texto</li>
+            <li>O email verifica se o formato é de e-mail e abre o teclado do celular com as opções de e-mail</li>
+            <li>O hidden esconde o campo, geralmente é utilizado com o JS</li>
+            <li>O search é utilizado quando o campo for de busca, ele adiciona um elemento que permite apagar o conteúdo
+                de dentro</li>
+            <li>O tel permite em um dispositivo móvel que o apareça somente o teclado numérico ao digitar o número e
+                caso de clique no número ele abre o discador</li>
+            <li>O number só aceita números</li>
+            <li>A url valida se é uma URL, ou seja, se tem o http:// ou https://</li>
+            <li>O range é um slider no qual podemos colocar o min, max e o salto que ele vai dar</li>
+        </ul>
+
+        <div>
+            <h1>Checkbox</h1>
+            É um tipo de input só que com a possibilidade de selecionar vários valores para um mesmo dado
+            <br />
+            <input type="checkbox" name="dia-da-semana" value="2"> Segunda-Feira <br />
+            <input type="checkbox" name="dia-da-semana" value="4"> Quarta-Feira <br />
+            <input type="checkbox" name="dia-da-semana" value="6"> Sexta-Feira <br />
+        </div>
+
+        <div>
+            <h1>Radio Button</h1>
+            Permite que apenas uma opção seja escolhida
+            <input type="radio" name="horario" value="manha">Manhã
+            <input type="radio" name="horario" value="manha">Tarde
+            <input type="radio" name="horario" value="manha">Noite
+        </div>
+
+        <div>
+            <h1>Text Area</h1>
+            Área de digitação de um texto. O texto digitado entre as tags de abertura e fechamento vai aparecer dentro
+            da
+            text area
+            <br />
+            <textarea name="mensagem" cols="50" rows="10"></textarea>
+        </div>
+    </div>
+
+    <div>
+        <h1>Select</h1>
+        Conhecido também como dropdown. Utilizando quando tem muitas opções e o usuário já conhece a resposta
+        <select name="cidade">
+            <option value="">Selecione a cidade</option>
+            <option value="Uberaba">Uberaba</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Belo Horizente">Belo Horizonte</option>
+        </select>
+    </div>
+
+    <div>
+        <h1>Datalist</h1>
+        Permite começa a digitar um texto e ele identifica o restante do texto. Ele está sempre conectado a um input.
+        <br />
+        <input list="cidade" name="cidade">
+        <datalist id="cidade">
+            <option value="Uberaba">Uberaba</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Belo Horizente">Belo Horizonte</option>
+        </datalist>
+    </div>
+
+    <div>
+        <h1>Button</h1>
+        <button type="button">Outra ação</button>
+        <button type="reset">Limpar</button>
+        <button type="subit">Enviar</button>
+        <input type="submit">
+        <ul>
+            <li>Type button deixa ele como apenas um botão, não tem ação</li>
+            <li>Reset permite limpar dados, muito utilizado para resetar um formulário</li>
+            <li>Submit tem a ação de enviar os dados, pode ser feito com o input também, porém, como button temos mais
+                opções de ações e podemos mudar o nome. Ou seja, temos maior controle sobre suas ações</li>
+        </ul>
+    </div>
+</body>
+
+</html>
