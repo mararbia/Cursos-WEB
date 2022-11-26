@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tabela Simples</h1>
+    <p>Tag Caption -> funciona como o título da tabela</p>
+    <p>Tag tr -> serve para colocarmos o conteúdo na linha</p>
+    <p>Tag td -> são as colunas onde vai estar nosso conteúdo</p>
+
+    <table>
+        <caption>
+            <h4>Horário de estudo</h4>
+        </caption>
+
+        <thead>
+            <th>Dias da Semana</th>
+            <th>Seg</th>
+            <th>Ter</th>
+            <th>Qua</th>
+            <th>Qui</th>
+            <th>Sex</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Manhã</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>Javascript</td>
+            </tr>
+
+            <tr>
+                <td>Tarde</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>Javascript</td>
+                <td>Javascript</td>
+                <td>Javascript</td>
+            </tr>
+
+            <tr>
+                <td>Noite</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>Javascript</td>
+                <td>Javascript</td>
+                <td>Javascript</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Dias da Semana</th>
+                <th>Seg</th>
+                <th>Ter</th>
+                <th>Qua</th>
+                <th>Qui</th>
+                <th>Sex</th>
+            </tr>
+        </tfoot>
+
+    </table>
+    <h1>Tabela com Células Mescladas</h1>
+    <h2>Exemplo 1</h2>
+
+    <p>Atributo rowspan="2" -> quer dizer que a linha vai expandir (mesclar) com 2 linhas</p>
+    <p>Atributo colspan="3" -> quer dizer que a coluna vai expandir (mesclar) com 3 colunas</p>
+    <p>Atributo border="1" -> Coloca uma borda na tabela para facilitar a visualização,
+        porém, é errado utilizá-la pq faz parte do html4 e a partir do html5 toda estilização
+        deve ser feita com CSS</p>
+
+    <table border="1">
+        <caption>
+            <h4>Horário de estudo</h4>
+        </caption>
+
+        <thead>
+            <th>Dias da Semana</th>
+            <th>Seg</th>
+            <th>Ter</th>
+            <th>Qua</th>
+            <th>Qui</th>
+            <th>Sex</th>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td>Manhã</td>
+                <td rowspan="3">HTML</td>
+                <td rowspan="3">CSS</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>Javascript</td>
+            </tr>
+
+            <tr>
+                <td>Tarde</td>
+                <td colspan="3">Javascript</td>
+            </tr>
+
+            <tr>
+                <td>Noite</td>
+                <td colspan="3">Javascript</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Dias da Semana</th>
+                <th>Seg</th>
+                <th>Ter</th>
+                <th>Qua</th>
+                <th>Qui</th>
+                <th>Sex</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Exemplo 2</h2>
+
+    <table border="1">
+        <caption>
+            <h4>Horário de estudo</h4>
+        </caption>
+
+        <thead>
+            <th>Dias da Semana</th>
+            <th>Seg</th>
+            <th>Ter</th>
+            <th>Qua</th>
+            <th>Qui</th>
+            <th>Sex</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Manhã</td>
+                <td rowspan="3">HTML</td>
+                <td rowspan="3">CSS</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td rowspan="3">Javascript</td>
+            </tr>
+
+            <tr>
+                <td>Tarde</td>
+                <td colspan="2">Javascript</td>
+            </tr>
+
+            <tr>
+                <td>Noite</td>
+                <td colspan="2">Javascript</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Dias da Semana</th>
+                <th>Seg</th>
+                <th>Ter</th>
+                <th>Qua</th>
+                <th>Qui</th>
+                <th>Sex</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
