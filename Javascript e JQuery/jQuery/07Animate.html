@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+
+    <!-- CSS -->
+    <style>
+        div{
+            width: 100px;
+            height: 80px;
+            background-color: green;
+        }
+    </style>
+
+    <!-- jQuery -->
+    <script src="jquery-3.6.1.min.js"></script>
+
+    <!-- Script -->
+    <script>
+
+        //Ao carregar o documento
+        $(document).ready(function() {
+
+
+            //Efeito de animação
+            $("button").click(function(){
+                $("div").animate({
+                    width:"400px",
+                    height:"200px"
+                });
+            });
+        });
+        
+
+    </script>
+
+</head>
+<body>
+    
+    <button>Clique aqui</button>
+
+    <div></div>
+
+</body>
+</html>
